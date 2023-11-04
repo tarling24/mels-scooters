@@ -1,0 +1,12 @@
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.csproj.AssemblyReference.cache
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\bin\Debug\MelsMobilityProject.exe.config
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\bin\Debug\MelsMobilityProject.exe
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\bin\Debug\MelsMobilityProject.pdb
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.Login.resources
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.Properties.Resources.resources
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.csproj.GenerateResource.cache
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.csproj.CoreCompileInputs.cache
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.exe
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.pdb
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.Main.resources
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.CustomerRentals.resources
