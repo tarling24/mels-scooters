@@ -21,13 +21,13 @@ namespace MelsMobilityProject
         private void Form2_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'melDatabase112AzureDataSet.rental' table. You can move, or remove it, as needed.
-            this.rentalTableAdapter1.Fill(this.melDatabase112AzureDataSet.rental);
+           // this.rentalTableAdapter1.Fill(this.melDatabase112AzureDataSet.rental);
             // TODO: This line of code loads data into the 'melDatabase112AzureDataSet.customer' table. You can move, or remove it, as needed.
-            this.customerTableAdapter1.Fill(this.melDatabase112AzureDataSet.customer);
+          //  this.customerTableAdapter1.Fill(this.melDatabase112AzureDataSet.customer);
             // TODO: This line of code loads data into the 'melDatabaseDataSetMain.rental' table. You can move, or remove it, as needed.
-            //this.rentalTableAdapter.Fill(this.melDatabaseDataSetMain.rental);
+            this.rentalTableAdapter.Fill(this.melDatabaseDataSetMain.rental);
             // TODO: This line of code loads data into the 'melDatabaseDataSetMain.customer' table. You can move, or remove it, as needed.
-           // this.customerTableAdapter.Fill(this.melDatabaseDataSetMain.customer);
+            this.customerTableAdapter.Fill(this.melDatabaseDataSetMain.customer);
             this.WindowState = FormWindowState.Maximized;
 
 
