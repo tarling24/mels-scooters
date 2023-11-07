@@ -37,8 +37,7 @@ namespace MelsMobilityProject
 
         private void buttonsignin_Click(object sender, EventArgs e)
         {
-          
-            Boolean ValidUser;
+         
             string connectssms = "Data Source=melscloudserver.database.windows.net;Initial Catalog=MelDatabase112;Persist Security Info=True;User ID=tarling;Password=Royals16";
             string query = "SELECT * from Security WHERE UserID= '" + textuserid.Text + "'AND Password = '" + textentry.Text + "'";
 
@@ -49,10 +48,8 @@ namespace MelsMobilityProject
                     SqlCommand cmd = new SqlCommand(query, myConnection);
                     myConnection.Open();
                     SqlDataReader readerReturnValue = cmd.ExecuteReader();
-
-                    if (readerReturnValue.HasRows == true)
+                        if (readerReturnValue.HasRows == true)
                     {
-                        ValidUser = true;
                         MessageBox.Show("Login Credentials Valid");
 
                         var Mainform = new Main();
@@ -62,7 +59,6 @@ namespace MelsMobilityProject
                     }
                     else
                     {
-                        ValidUser = false;
                         MessageBox.Show("User ID and or Password is incorrect. Please try again.");
 
                     }
@@ -111,6 +107,11 @@ namespace MelsMobilityProject
                 textentry.PasswordChar = '*';
                 textentry.UseSystemPasswordChar = true;
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }
