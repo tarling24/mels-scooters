@@ -41,6 +41,8 @@ namespace MelsMobilityProject
             this.WindowState = FormWindowState.Maximized;
         }
 
+
+
         private void scootersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -84,9 +86,9 @@ namespace MelsMobilityProject
 
         private void customerrentalbutton_Click(object sender, EventArgs e)
         {
-            var CustomerRentalsForm = new CustomerRentals();
-            CustomerRentalsForm.Formtoshowonclosing = this;
-            CustomerRentalsForm.Show();
+            var CloudRecordsForm = new CloudRecords();
+            CloudRecordsForm.Formtoshowonclosing = this;
+            CloudRecordsForm.Show();
             this.Hide();
         }
     }
