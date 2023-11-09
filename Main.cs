@@ -91,5 +91,13 @@ namespace MelsMobilityProject
             CloudRecordsForm.Show();
             this.Hide();
         }
+
+        private void ScooterRentalButton_Click(object sender, EventArgs e)
+        {
+            var RentedScootersForm = new RentedScooters();
+            RentedScootersForm.Formtoshowonclosing = this;
+            RentedScootersForm.Show();
+            this.Hide();
+        }
     }
 }

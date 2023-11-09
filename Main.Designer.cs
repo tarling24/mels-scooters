@@ -64,6 +64,7 @@ namespace MelsMobilityProject
             this.conditionTextBox = new System.Windows.Forms.TextBox();
             this.pictureBoxScooter = new System.Windows.Forms.PictureBox();
             this.customerrentalbutton = new System.Windows.Forms.Button();
+            this.ScooterRentalButton = new System.Windows.Forms.Button();
             iDLabel = new System.Windows.Forms.Label();
             scooterLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
@@ -376,12 +377,24 @@ namespace MelsMobilityProject
             this.customerrentalbutton.UseVisualStyleBackColor = false;
             this.customerrentalbutton.Click += new System.EventHandler(this.customerrentalbutton_Click);
             // 
+            // ScooterRentalButton
+            // 
+            this.ScooterRentalButton.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ScooterRentalButton.Location = new System.Drawing.Point(289, 510);
+            this.ScooterRentalButton.Name = "ScooterRentalButton";
+            this.ScooterRentalButton.Size = new System.Drawing.Size(211, 46);
+            this.ScooterRentalButton.TabIndex = 17;
+            this.ScooterRentalButton.Text = "Scooter Rentals\r\n\r\n";
+            this.ScooterRentalButton.UseVisualStyleBackColor = false;
+            this.ScooterRentalButton.Click += new System.EventHandler(this.ScooterRentalButton_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1105, 701);
+            this.Controls.Add(this.ScooterRentalButton);
             this.Controls.Add(this.customerrentalbutton);
             this.Controls.Add(this.pictureBoxScooter);
             this.Controls.Add(iDLabel);
@@ -442,5 +455,6 @@ namespace MelsMobilityProject
         private System.Windows.Forms.TextBox conditionTextBox;
         private System.Windows.Forms.PictureBox pictureBoxScooter;
         private System.Windows.Forms.Button customerrentalbutton;
+        private System.Windows.Forms.Button ScooterRentalButton;
     }
 }

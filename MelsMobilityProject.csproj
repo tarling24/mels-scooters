@@ -52,6 +52,17 @@
     <Compile Include="CloudRecords.Designer.cs">
       <DependentUpon>CloudRecords.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerRentals.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerRentals.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RentedScooters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentedScooters.Designer.cs">
+      <DependentUpon>RentedScooters.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +95,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScooterDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScooterDataset.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CloudRecords.resx">
       <DependentUpon>CloudRecords.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +118,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RentedScooters.resx">
+      <DependentUpon>RentedScooters.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CustomerRentals.xsc">
+      <DependentUpon>CustomerRentals.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerRentals.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerRentals.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CustomerRentals.xss">
+      <DependentUpon>CustomerRentals.xsd</DependentUpon>
+    </None>
     <None Include="MelDatabase112AzureDataSet.xsc">
       <DependentUpon>MelDatabase112AzureDataSet.xsd</DependentUpon>
     </None>
@@ -144,6 +174,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ScooterDataset.xsc">
+      <DependentUpon>ScooterDataset.xsd</DependentUpon>
+    </None>
+    <None Include="ScooterDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScooterDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScooterDataset.xss">
+      <DependentUpon>ScooterDataset.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
