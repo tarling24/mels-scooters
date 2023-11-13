@@ -85,6 +85,7 @@ namespace MelsMobilityProject
             this.Scooterpic.Location = new System.Drawing.Point(1266, 114);
             this.Scooterpic.Name = "Scooterpic";
             this.Scooterpic.Size = new System.Drawing.Size(374, 359);
+            this.Scooterpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Scooterpic.TabIndex = 5;
             this.Scooterpic.TabStop = false;
             // 
@@ -163,17 +164,18 @@ namespace MelsMobilityProject
             // rentalDataGridView
             // 
             this.rentalDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.rentalDataGridView.Location = new System.Drawing.Point(0, 598);
+            this.rentalDataGridView.Location = new System.Drawing.Point(146, 597);
             this.rentalDataGridView.Name = "rentalDataGridView";
             this.rentalDataGridView.RowHeadersWidth = 82;
             this.rentalDataGridView.RowTemplate.Height = 33;
-            this.rentalDataGridView.Size = new System.Drawing.Size(1708, 477);
+            this.rentalDataGridView.Size = new System.Drawing.Size(1445, 477);
             this.rentalDataGridView.TabIndex = 1;
             // 
             // RentedScooters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1720, 1087);
             this.Controls.Add(this.rentalDataGridView);
             this.Controls.Add(this.groupBox1);

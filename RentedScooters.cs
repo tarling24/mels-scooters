@@ -26,7 +26,9 @@ namespace MelsMobilityProject
         SqlDataReader scooterReader = null;
         private void RentedScooters_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection("Data Source=melscloudserver.database.windows.net;Initial Catalog=MelDatabase112;Persist Security Info=True;User ID=tarling;Password=Royals16;MultipleActiveResultsSets=true");
+            this.WindowState = FormWindowState.Maximized;
+
+            conn = new SqlConnection("Data Source=melscloudserver.database.windows.net;Initial Catalog=MelDatabase112;User ID=tarling;Password=Royals16;MultipleActiveResultSets=true");
             conn.Open();
 
             SqlCommand cmd = new SqlCommand("SELECT Name, ID FROM Scooters", conn);
@@ -58,11 +60,11 @@ namespace MelsMobilityProject
             }
             else
             {
-                SqlCommand cmd = new SqlCommand("SELECT Rentals.ScooterID, " +
-                    "Rentals.StartDate, Rentals.EndDate, " +
-                    "Rentals.RentalExitCondition, Customers.FirstName, Customer.LastName " +
-                    "From Rentals INNER JOIN Customers ON Rentals.CustID = Customers.CustID " +
-                    "WHERE Rentals.ScooterID = @ScootID", conn);
+                SqlCommand cmd = new SqlCommand("SELECT rental.ScooterID, " +
+                    "rental.StartDate, rental.EndDate, " +
+                    "rental.RentalExitCondition, customer.FIrstName, customer.LastName " +
+                    "From rental INNER JOIN customer ON rental.CustID = customer.CustID " +
+                    "WHERE rental.ScooterID = @ScootID", conn);
 
                 SqlCommand cmd2 = new SqlCommand("Select ID, Scooter, Condition From Scooters WHERE ID = @ScootID2", conn);
 
@@ -79,6 +81,7 @@ namespace MelsMobilityProject
                 customerRentalReader.Close();
 
                 scooterReader = cmd2.ExecuteReader();
+
                 DataSet ds2 = new DataSet();
                 DataTable dt2 = new DataTable("Table2");
                 ds2.Tables.Add(dt2);
@@ -87,7 +90,7 @@ namespace MelsMobilityProject
 
                 rentalDataGridView.DataSource = ds.Tables[0];
 
-                this.rentalDataGridView.Columns["ID"].Visible = false;
+                //this.rentalDataGridView.Columns["ID"].Visible = false;  //This is throwing an error, not sure why
 
                 if(ds2.Tables[0].Rows.Count < 1)
                 {
@@ -99,8 +102,8 @@ namespace MelsMobilityProject
                     ConditionTextbox.Text = dt2.Rows[0][2].ToString();
                     Imagetextbox.Text = dt2.Rows[0][1].ToString();
 
-                    Scooterpic.Image = Image.FromFile("C:\\Users\\Thomas Arling\\c# 3\\Challenge Lab 6\\Images\\Images"
-                        + dt2.Rows[0][1].ToString());
+                    Scooterpic.Image = Image.FromFile("C:\\Users\\Thomas Arling\\source\\repos\\MelsMobilityProject\\Images\\Images\\"
+                        + dt2.Rows[0][1].ToString()); //Specific Pic text added
                 }
 
 
