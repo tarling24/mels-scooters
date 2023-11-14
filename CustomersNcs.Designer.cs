@@ -30,7 +30,6 @@ namespace MelsMobilityProject
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomersNcs));
             System.Windows.Forms.Label custIDLabel;
             System.Windows.Forms.Label fIrstNameLabel;
             System.Windows.Forms.Label lastNameLabel;
@@ -40,26 +39,12 @@ namespace MelsMobilityProject
             System.Windows.Forms.Label zipLabel;
             System.Windows.Forms.Label phoneNumberLabel;
             System.Windows.Forms.Label emailLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomersNcs));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.melDatabase112DataSetLab11 = new MelsMobilityProject.MelDatabase112DataSetLab11();
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customerTableAdapter = new MelsMobilityProject.MelDatabase112DataSetLab11TableAdapters.customerTableAdapter();
-            this.tableAdapterManager = new MelsMobilityProject.MelDatabase112DataSetLab11TableAdapters.TableAdapterManager();
-            this.customerBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.customerBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.exitbutton = new System.Windows.Forms.Button();
             this.custIDTextBox = new System.Windows.Forms.TextBox();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.melDatabase112DataSetLab11 = new MelsMobilityProject.MelDatabase112DataSetLab11();
             this.fIrstNameTextBox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.addressTextBox = new System.Windows.Forms.TextBox();
@@ -68,7 +53,22 @@ namespace MelsMobilityProject
             this.zipTextBox = new System.Windows.Forms.TextBox();
             this.phoneNumberTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.exitbutton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.customerTableAdapter = new MelsMobilityProject.MelDatabase112DataSetLab11TableAdapters.customerTableAdapter();
+            this.tableAdapterManager = new MelsMobilityProject.MelDatabase112DataSetLab11TableAdapters.TableAdapterManager();
+            this.customerBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.customerBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             custIDLabel = new System.Windows.Forms.Label();
             fIrstNameLabel = new System.Windows.Forms.Label();
             lastNameLabel = new System.Windows.Forms.Label();
@@ -79,11 +79,101 @@ namespace MelsMobilityProject
             phoneNumberLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.melDatabase112DataSetLab11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.melDatabase112DataSetLab11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingNavigator)).BeginInit();
             this.customerBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // custIDLabel
+            // 
+            custIDLabel.AutoSize = true;
+            custIDLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            custIDLabel.Location = new System.Drawing.Point(265, 186);
+            custIDLabel.Name = "custIDLabel";
+            custIDLabel.Size = new System.Drawing.Size(111, 29);
+            custIDLabel.TabIndex = 1;
+            custIDLabel.Text = "Cust ID:";
+            // 
+            // fIrstNameLabel
+            // 
+            fIrstNameLabel.AutoSize = true;
+            fIrstNameLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            fIrstNameLabel.Location = new System.Drawing.Point(265, 223);
+            fIrstNameLabel.Name = "fIrstNameLabel";
+            fIrstNameLabel.Size = new System.Drawing.Size(152, 29);
+            fIrstNameLabel.TabIndex = 3;
+            fIrstNameLabel.Text = "First Name:";
+            // 
+            // lastNameLabel
+            // 
+            lastNameLabel.AutoSize = true;
+            lastNameLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lastNameLabel.Location = new System.Drawing.Point(265, 260);
+            lastNameLabel.Name = "lastNameLabel";
+            lastNameLabel.Size = new System.Drawing.Size(150, 29);
+            lastNameLabel.TabIndex = 5;
+            lastNameLabel.Text = "Last Name:";
+            // 
+            // addressLabel
+            // 
+            addressLabel.AutoSize = true;
+            addressLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            addressLabel.Location = new System.Drawing.Point(265, 297);
+            addressLabel.Name = "addressLabel";
+            addressLabel.Size = new System.Drawing.Size(116, 29);
+            addressLabel.TabIndex = 7;
+            addressLabel.Text = "Address:";
+            // 
+            // cityLabel
+            // 
+            cityLabel.AutoSize = true;
+            cityLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            cityLabel.Location = new System.Drawing.Point(265, 334);
+            cityLabel.Name = "cityLabel";
+            cityLabel.Size = new System.Drawing.Size(68, 29);
+            cityLabel.TabIndex = 9;
+            cityLabel.Text = "City:";
+            // 
+            // stateLabel
+            // 
+            stateLabel.AutoSize = true;
+            stateLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            stateLabel.Location = new System.Drawing.Point(265, 371);
+            stateLabel.Name = "stateLabel";
+            stateLabel.Size = new System.Drawing.Size(85, 29);
+            stateLabel.TabIndex = 11;
+            stateLabel.Text = "State:";
+            // 
+            // zipLabel
+            // 
+            zipLabel.AutoSize = true;
+            zipLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            zipLabel.Location = new System.Drawing.Point(265, 408);
+            zipLabel.Name = "zipLabel";
+            zipLabel.Size = new System.Drawing.Size(55, 29);
+            zipLabel.TabIndex = 13;
+            zipLabel.Text = "Zip:";
+            // 
+            // phoneNumberLabel
+            // 
+            phoneNumberLabel.AutoSize = true;
+            phoneNumberLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            phoneNumberLabel.Location = new System.Drawing.Point(265, 445);
+            phoneNumberLabel.Name = "phoneNumberLabel";
+            phoneNumberLabel.Size = new System.Drawing.Size(200, 29);
+            phoneNumberLabel.TabIndex = 15;
+            phoneNumberLabel.Text = "Phone Number:";
+            // 
+            // emailLabel
+            // 
+            emailLabel.AutoSize = true;
+            emailLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            emailLabel.Location = new System.Drawing.Point(265, 482);
+            emailLabel.Name = "emailLabel";
+            emailLabel.Size = new System.Drawing.Size(82, 29);
+            emailLabel.TabIndex = 17;
+            emailLabel.Text = "Email:";
             // 
             // groupBox1
             // 
@@ -114,6 +204,109 @@ namespace MelsMobilityProject
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // exitbutton
+            // 
+            this.exitbutton.BackColor = System.Drawing.Color.Firebrick;
+            this.exitbutton.Location = new System.Drawing.Point(35, 656);
+            this.exitbutton.Name = "exitbutton";
+            this.exitbutton.Size = new System.Drawing.Size(115, 51);
+            this.exitbutton.TabIndex = 19;
+            this.exitbutton.Text = "Exit";
+            this.exitbutton.UseVisualStyleBackColor = false;
+            this.exitbutton.Click += new System.EventHandler(this.exitbutton_Click);
+            // 
+            // custIDTextBox
+            // 
+            this.custIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "CustID", true));
+            this.custIDTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.custIDTextBox.Location = new System.Drawing.Point(535, 186);
+            this.custIDTextBox.Name = "custIDTextBox";
+            this.custIDTextBox.ReadOnly = true;
+            this.custIDTextBox.Size = new System.Drawing.Size(246, 36);
+            this.custIDTextBox.TabIndex = 2;
+            // 
+            // customerBindingSource
+            // 
+            this.customerBindingSource.DataMember = "customer";
+            this.customerBindingSource.DataSource = this.melDatabase112DataSetLab11;
+            // 
+            // melDatabase112DataSetLab11
+            // 
+            this.melDatabase112DataSetLab11.DataSetName = "MelDatabase112DataSetLab11";
+            this.melDatabase112DataSetLab11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fIrstNameTextBox
+            // 
+            this.fIrstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "FIrstName", true));
+            this.fIrstNameTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fIrstNameTextBox.Location = new System.Drawing.Point(535, 223);
+            this.fIrstNameTextBox.Name = "fIrstNameTextBox";
+            this.fIrstNameTextBox.Size = new System.Drawing.Size(246, 36);
+            this.fIrstNameTextBox.TabIndex = 4;
+            // 
+            // lastNameTextBox
+            // 
+            this.lastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "LastName", true));
+            this.lastNameTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameTextBox.Location = new System.Drawing.Point(535, 260);
+            this.lastNameTextBox.Name = "lastNameTextBox";
+            this.lastNameTextBox.Size = new System.Drawing.Size(246, 36);
+            this.lastNameTextBox.TabIndex = 6;
+            // 
+            // addressTextBox
+            // 
+            this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "Address", true));
+            this.addressTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressTextBox.Location = new System.Drawing.Point(535, 297);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(246, 36);
+            this.addressTextBox.TabIndex = 8;
+            // 
+            // cityTextBox
+            // 
+            this.cityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "City", true));
+            this.cityTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cityTextBox.Location = new System.Drawing.Point(535, 334);
+            this.cityTextBox.Name = "cityTextBox";
+            this.cityTextBox.Size = new System.Drawing.Size(246, 36);
+            this.cityTextBox.TabIndex = 10;
+            // 
+            // stateTextBox
+            // 
+            this.stateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "State", true));
+            this.stateTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stateTextBox.Location = new System.Drawing.Point(535, 371);
+            this.stateTextBox.Name = "stateTextBox";
+            this.stateTextBox.Size = new System.Drawing.Size(246, 36);
+            this.stateTextBox.TabIndex = 12;
+            // 
+            // zipTextBox
+            // 
+            this.zipTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "Zip", true));
+            this.zipTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zipTextBox.Location = new System.Drawing.Point(535, 408);
+            this.zipTextBox.Name = "zipTextBox";
+            this.zipTextBox.Size = new System.Drawing.Size(246, 36);
+            this.zipTextBox.TabIndex = 14;
+            // 
+            // phoneNumberTextBox
+            // 
+            this.phoneNumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "PhoneNumber", true));
+            this.phoneNumberTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(535, 445);
+            this.phoneNumberTextBox.Name = "phoneNumberTextBox";
+            this.phoneNumberTextBox.Size = new System.Drawing.Size(246, 36);
+            this.phoneNumberTextBox.TabIndex = 16;
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "email", true));
+            this.emailTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextBox.Location = new System.Drawing.Point(535, 482);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(246, 36);
+            this.emailTextBox.TabIndex = 18;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -123,16 +316,6 @@ namespace MelsMobilityProject
             this.label1.Size = new System.Drawing.Size(444, 98);
             this.label1.TabIndex = 0;
             this.label1.Text = "Customers\r\n";
-            // 
-            // melDatabase112DataSetLab11
-            // 
-            this.melDatabase112DataSetLab11.DataSetName = "MelDatabase112DataSetLab11";
-            this.melDatabase112DataSetLab11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customerBindingSource
-            // 
-            this.customerBindingSource.DataMember = "customer";
-            this.customerBindingSource.DataSource = this.melDatabase112DataSetLab11;
             // 
             // customerTableAdapter
             // 
@@ -178,6 +361,33 @@ namespace MelsMobilityProject
             this.customerBindingNavigator.TabIndex = 1;
             this.customerBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(71, 36);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -211,16 +421,9 @@ namespace MelsMobilityProject
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(71, 36);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 42);
             // 
             // bindingNavigatorMoveNextItem
@@ -243,28 +446,8 @@ namespace MelsMobilityProject
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 42);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Enabled = false;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 36);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
             // customerBindingNavigatorSaveItem
             // 
@@ -274,189 +457,6 @@ namespace MelsMobilityProject
             this.customerBindingNavigatorSaveItem.Size = new System.Drawing.Size(46, 36);
             this.customerBindingNavigatorSaveItem.Text = "Save Data";
             this.customerBindingNavigatorSaveItem.Click += new System.EventHandler(this.customerBindingNavigatorSaveItem_Click);
-            // 
-            // custIDLabel
-            // 
-            custIDLabel.AutoSize = true;
-            custIDLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            custIDLabel.Location = new System.Drawing.Point(265, 186);
-            custIDLabel.Name = "custIDLabel";
-            custIDLabel.Size = new System.Drawing.Size(111, 29);
-            custIDLabel.TabIndex = 1;
-            custIDLabel.Text = "Cust ID:";
-            // 
-            // custIDTextBox
-            // 
-            this.custIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "CustID", true));
-            this.custIDTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.custIDTextBox.Location = new System.Drawing.Point(535, 186);
-            this.custIDTextBox.Name = "custIDTextBox";
-            this.custIDTextBox.ReadOnly = true;
-            this.custIDTextBox.Size = new System.Drawing.Size(246, 36);
-            this.custIDTextBox.TabIndex = 2;
-            // 
-            // fIrstNameLabel
-            // 
-            fIrstNameLabel.AutoSize = true;
-            fIrstNameLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            fIrstNameLabel.Location = new System.Drawing.Point(265, 223);
-            fIrstNameLabel.Name = "fIrstNameLabel";
-            fIrstNameLabel.Size = new System.Drawing.Size(152, 29);
-            fIrstNameLabel.TabIndex = 3;
-            fIrstNameLabel.Text = "First Name:";
-            // 
-            // fIrstNameTextBox
-            // 
-            this.fIrstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "FIrstName", true));
-            this.fIrstNameTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fIrstNameTextBox.Location = new System.Drawing.Point(535, 223);
-            this.fIrstNameTextBox.Name = "fIrstNameTextBox";
-            this.fIrstNameTextBox.Size = new System.Drawing.Size(246, 36);
-            this.fIrstNameTextBox.TabIndex = 4;
-            // 
-            // lastNameLabel
-            // 
-            lastNameLabel.AutoSize = true;
-            lastNameLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lastNameLabel.Location = new System.Drawing.Point(265, 260);
-            lastNameLabel.Name = "lastNameLabel";
-            lastNameLabel.Size = new System.Drawing.Size(150, 29);
-            lastNameLabel.TabIndex = 5;
-            lastNameLabel.Text = "Last Name:";
-            // 
-            // lastNameTextBox
-            // 
-            this.lastNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "LastName", true));
-            this.lastNameTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastNameTextBox.Location = new System.Drawing.Point(535, 260);
-            this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(246, 36);
-            this.lastNameTextBox.TabIndex = 6;
-            // 
-            // addressLabel
-            // 
-            addressLabel.AutoSize = true;
-            addressLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            addressLabel.Location = new System.Drawing.Point(265, 297);
-            addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(116, 29);
-            addressLabel.TabIndex = 7;
-            addressLabel.Text = "Address:";
-            // 
-            // addressTextBox
-            // 
-            this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "Address", true));
-            this.addressTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addressTextBox.Location = new System.Drawing.Point(535, 297);
-            this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(246, 36);
-            this.addressTextBox.TabIndex = 8;
-            // 
-            // cityLabel
-            // 
-            cityLabel.AutoSize = true;
-            cityLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            cityLabel.Location = new System.Drawing.Point(265, 334);
-            cityLabel.Name = "cityLabel";
-            cityLabel.Size = new System.Drawing.Size(68, 29);
-            cityLabel.TabIndex = 9;
-            cityLabel.Text = "City:";
-            // 
-            // cityTextBox
-            // 
-            this.cityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "City", true));
-            this.cityTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cityTextBox.Location = new System.Drawing.Point(535, 334);
-            this.cityTextBox.Name = "cityTextBox";
-            this.cityTextBox.Size = new System.Drawing.Size(246, 36);
-            this.cityTextBox.TabIndex = 10;
-            // 
-            // stateLabel
-            // 
-            stateLabel.AutoSize = true;
-            stateLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            stateLabel.Location = new System.Drawing.Point(265, 371);
-            stateLabel.Name = "stateLabel";
-            stateLabel.Size = new System.Drawing.Size(85, 29);
-            stateLabel.TabIndex = 11;
-            stateLabel.Text = "State:";
-            // 
-            // stateTextBox
-            // 
-            this.stateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "State", true));
-            this.stateTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stateTextBox.Location = new System.Drawing.Point(535, 371);
-            this.stateTextBox.Name = "stateTextBox";
-            this.stateTextBox.Size = new System.Drawing.Size(246, 36);
-            this.stateTextBox.TabIndex = 12;
-            // 
-            // zipLabel
-            // 
-            zipLabel.AutoSize = true;
-            zipLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            zipLabel.Location = new System.Drawing.Point(265, 408);
-            zipLabel.Name = "zipLabel";
-            zipLabel.Size = new System.Drawing.Size(55, 29);
-            zipLabel.TabIndex = 13;
-            zipLabel.Text = "Zip:";
-            // 
-            // zipTextBox
-            // 
-            this.zipTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "Zip", true));
-            this.zipTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zipTextBox.Location = new System.Drawing.Point(535, 408);
-            this.zipTextBox.Name = "zipTextBox";
-            this.zipTextBox.Size = new System.Drawing.Size(246, 36);
-            this.zipTextBox.TabIndex = 14;
-            // 
-            // phoneNumberLabel
-            // 
-            phoneNumberLabel.AutoSize = true;
-            phoneNumberLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            phoneNumberLabel.Location = new System.Drawing.Point(265, 445);
-            phoneNumberLabel.Name = "phoneNumberLabel";
-            phoneNumberLabel.Size = new System.Drawing.Size(200, 29);
-            phoneNumberLabel.TabIndex = 15;
-            phoneNumberLabel.Text = "Phone Number:";
-            // 
-            // phoneNumberTextBox
-            // 
-            this.phoneNumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "PhoneNumber", true));
-            this.phoneNumberTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(535, 445);
-            this.phoneNumberTextBox.Name = "phoneNumberTextBox";
-            this.phoneNumberTextBox.Size = new System.Drawing.Size(246, 36);
-            this.phoneNumberTextBox.TabIndex = 16;
-            // 
-            // emailLabel
-            // 
-            emailLabel.AutoSize = true;
-            emailLabel.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            emailLabel.Location = new System.Drawing.Point(265, 482);
-            emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(82, 29);
-            emailLabel.TabIndex = 17;
-            emailLabel.Text = "Email:";
-            // 
-            // emailTextBox
-            // 
-            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "email", true));
-            this.emailTextBox.Font = new System.Drawing.Font("MS UI Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTextBox.Location = new System.Drawing.Point(535, 482);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(246, 36);
-            this.emailTextBox.TabIndex = 18;
-            // 
-            // exitbutton
-            // 
-            this.exitbutton.BackColor = System.Drawing.Color.Firebrick;
-            this.exitbutton.Location = new System.Drawing.Point(35, 656);
-            this.exitbutton.Name = "exitbutton";
-            this.exitbutton.Size = new System.Drawing.Size(115, 51);
-            this.exitbutton.TabIndex = 19;
-            this.exitbutton.Text = "Exit";
-            this.exitbutton.UseVisualStyleBackColor = false;
-            this.exitbutton.Click += new System.EventHandler(this.exitbutton_Click);
             // 
             // CustomersNcs
             // 
@@ -468,10 +468,11 @@ namespace MelsMobilityProject
             this.Name = "CustomersNcs";
             this.Text = "CustomersNcs";
             this.Load += new System.EventHandler(this.CustomersNcs_Load);
+            this.VisibleChanged += new System.EventHandler(this.CustomerNcs_VisibleChanged);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.melDatabase112DataSetLab11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.melDatabase112DataSetLab11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingNavigator)).EndInit();
             this.customerBindingNavigator.ResumeLayout(false);
             this.customerBindingNavigator.PerformLayout();

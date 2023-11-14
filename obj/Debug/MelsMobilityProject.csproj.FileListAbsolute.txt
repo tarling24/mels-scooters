@@ -13,3 +13,5 @@ C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityPr
 C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.RentedScooters.resources
 C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.Dashboard.resources
 C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.CustomersNcs.resources
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.ScootersN.resources
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.AddCustomer.resources
