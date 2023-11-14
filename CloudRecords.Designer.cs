@@ -466,7 +466,7 @@ namespace MelsMobilityProject
             this.customerBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.customerBindingNavigator.Name = "customerBindingNavigator";
             this.customerBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.customerBindingNavigator.Size = new System.Drawing.Size(1494, 42);
+            this.customerBindingNavigator.Size = new System.Drawing.Size(1494, 50);
             this.customerBindingNavigator.TabIndex = 3;
             this.customerBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -476,13 +476,13 @@ namespace MelsMobilityProject
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(71, 36);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(71, 44);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -492,7 +492,7 @@ namespace MelsMobilityProject
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -501,7 +501,7 @@ namespace MelsMobilityProject
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -510,13 +510,13 @@ namespace MelsMobilityProject
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 42);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 50);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -531,7 +531,7 @@ namespace MelsMobilityProject
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 42);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 50);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -539,7 +539,7 @@ namespace MelsMobilityProject
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -548,20 +548,20 @@ namespace MelsMobilityProject
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 42);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 50);
             // 
             // customerBindingNavigatorSaveItem
             // 
             this.customerBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.customerBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("customerBindingNavigatorSaveItem.Image")));
             this.customerBindingNavigatorSaveItem.Name = "customerBindingNavigatorSaveItem";
-            this.customerBindingNavigatorSaveItem.Size = new System.Drawing.Size(46, 36);
+            this.customerBindingNavigatorSaveItem.Size = new System.Drawing.Size(46, 44);
             this.customerBindingNavigatorSaveItem.Text = "Save Data";
             this.customerBindingNavigatorSaveItem.Click += new System.EventHandler(this.customerBindingNavigatorSaveItem_Click);
             // 

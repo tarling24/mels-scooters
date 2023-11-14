@@ -57,6 +57,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CustomerRentals.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CustomersNcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersNcs.Designer.cs">
+      <DependentUpon>CustomersNcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MelDatabase112DataSetLab11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MelDatabase112DataSetLab11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RentedScooters.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +120,12 @@
     <EmbeddedResource Include="CloudRecords.resx">
       <DependentUpon>CloudRecords.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomersNcs.resx">
+      <DependentUpon>CustomersNcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +165,17 @@
     </None>
     <None Include="MelDatabase112AzureDataSet.xss">
       <DependentUpon>MelDatabase112AzureDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MelDatabase112DataSetLab11.xsc">
+      <DependentUpon>MelDatabase112DataSetLab11.xsd</DependentUpon>
+    </None>
+    <None Include="MelDatabase112DataSetLab11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MelDatabase112DataSetLab11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MelDatabase112DataSetLab11.xss">
+      <DependentUpon>MelDatabase112DataSetLab11.xsd</DependentUpon>
     </None>
     <None Include="MelDatabaseDataSet.xsc">
       <DependentUpon>MelDatabaseDataSet.xsd</DependentUpon>

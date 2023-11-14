@@ -52,9 +52,9 @@ namespace MelsMobilityProject
                     {
                         MessageBox.Show("Login Credentials Valid");
 
-                        var Mainform = new Main();
-                        Mainform.Formtoshowonclosing = this;
-                        Mainform.Show();
+                        var DashForm = new Dashboard();
+                        DashForm.Formtoshowonclosing = this;
+                        DashForm.Show();
                         this.Hide();
                     }
                     else
