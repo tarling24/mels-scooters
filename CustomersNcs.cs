@@ -74,7 +74,6 @@ namespace MelsMobilityProject
             newAddCusts.Formtoshowonclosing = this;
             newAddCusts.Show();
             this.Hide();
-
         }
     }
 }

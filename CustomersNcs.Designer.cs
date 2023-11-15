@@ -324,7 +324,7 @@ namespace MelsMobilityProject
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.customerTableAdapter = this.customerTableAdapter;
+            this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.rentalTableAdapter = null;
             this.tableAdapterManager.ScootersTableAdapter = null;
             this.tableAdapterManager.SecurityTableAdapter = null;
@@ -357,7 +357,7 @@ namespace MelsMobilityProject
             this.customerBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.customerBindingNavigator.Name = "customerBindingNavigator";
             this.customerBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.customerBindingNavigator.Size = new System.Drawing.Size(1274, 42);
+            this.customerBindingNavigator.Size = new System.Drawing.Size(1274, 50);
             this.customerBindingNavigator.TabIndex = 1;
             this.customerBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -367,7 +367,7 @@ namespace MelsMobilityProject
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
             // 

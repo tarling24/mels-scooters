@@ -52,6 +52,18 @@
     <Compile Include="AddCustomer.Designer.cs">
       <DependentUpon>AddCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddRentals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRentals.Designer.cs">
+      <DependentUpon>AddRentals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddScooters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScooters.Designer.cs">
+      <DependentUpon>AddScooters.cs</DependentUpon>
+    </Compile>
     <Compile Include="CloudRecords.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +94,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MelDatabase112DataSetLab11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RentalsN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalsN.Designer.cs">
+      <DependentUpon>RentalsN.cs</DependentUpon>
     </Compile>
     <Compile Include="RentedScooters.cs">
       <SubType>Form</SubType>
@@ -135,6 +153,13 @@
     <EmbeddedResource Include="AddCustomer.resx">
       <DependentUpon>AddCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddRentals.resx">
+      <DependentUpon>AddRentals.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddScooters.resx">
+      <DependentUpon>AddScooters.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CloudRecords.resx">
       <DependentUpon>CloudRecords.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +184,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RentalsN.resx">
+      <DependentUpon>RentalsN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RentedScooters.resx">
       <DependentUpon>RentedScooters.cs</DependentUpon>
     </EmbeddedResource>

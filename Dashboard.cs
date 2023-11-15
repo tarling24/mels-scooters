@@ -48,9 +48,14 @@ namespace MelsMobilityProject
 
         private void RentalsButton_Click(object sender, EventArgs e)
         {
-            var RentedScootersForm = new RentedScooters();
-            RentedScootersForm.Formtoshowonclosing = this;
-            RentedScootersForm.Show();
+            
+        }
+
+        private void RentalsButton_Click_1(object sender, EventArgs e)
+        {
+            var RentalsForm = new RentalsN();
+            RentalsForm.Formtoshowonclosing = this;
+            RentalsForm.Show();
             this.Hide();
         }
     }

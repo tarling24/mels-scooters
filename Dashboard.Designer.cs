@@ -93,7 +93,7 @@ namespace MelsMobilityProject
             this.RentalsButton.TabIndex = 5;
             this.RentalsButton.Text = "Rentals\r\n";
             this.RentalsButton.UseVisualStyleBackColor = true;
-            this.RentalsButton.Click += new System.EventHandler(this.RentalsButton_Click);
+            this.RentalsButton.Click += new System.EventHandler(this.RentalsButton_Click_1);
             // 
             // Scooterbutton
             // 

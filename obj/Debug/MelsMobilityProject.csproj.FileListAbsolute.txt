@@ -1,4 +1,3 @@
-C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.csproj.AssemblyReference.cache
 C:\Users\Thomas Arling\source\repos\MelsMobilityProject\bin\Debug\MelsMobilityProject.exe.config
 C:\Users\Thomas Arling\source\repos\MelsMobilityProject\bin\Debug\MelsMobilityProject.exe
 C:\Users\Thomas Arling\source\repos\MelsMobilityProject\bin\Debug\MelsMobilityProject.pdb
@@ -15,3 +14,7 @@ C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityPr
 C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.CustomersNcs.resources
 C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.ScootersN.resources
 C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.AddCustomer.resources
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.RentalsN.resources
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.AddRentals.resources
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.AddScooters.resources
+C:\Users\Thomas Arling\source\repos\MelsMobilityProject\obj\Debug\MelsMobilityProject.csproj.AssemblyReference.cache
